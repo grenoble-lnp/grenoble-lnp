@@ -1,0 +1,258 @@
+<!DOCTYPE html><html>
+
+<head>
+    <meta charset="UTF-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /><title>Service d&#39;authentification aux services numériques de la Direction des Systèmes d&#39;Informations Mutualisés de l&#39;Université Grenoble Alpes - Déconnexion réussie</title>
+
+    <!-- Metadescription --><meta name="description" content="Se connecter au service d&#39;authentification aux services numériques de la Direction des Systèmes d&#39;Informations Mutualisés de l&#39;Université Grenoble Alpes" /><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <link rel="stylesheet" type="text/css" href="webjars/normalize.css/8.0.1/normalize.css" /><link rel="stylesheet" type="text/css" href="webjars/bootstrap/5.2.0/css/bootstrap-grid.min.css" /><link rel="stylesheet" type="text/css" href="webjars/material-components-web/14.0.0/dist/material-components-web.min.css" /><link rel="stylesheet" type="text/css" href="webjars/mdi__font/6.5.95/css/materialdesignicons.min.css" /><link rel="stylesheet" type="text/css" href="themes/theme-dsim/css/cas.css" /><!-- Favicons  --><link rel="icon" type="image/png" sizes="16x16"  
+             href="themes/theme-dsim/favicon/favicon-16x16.png" /></head>
+
+<body>
+    <script type="text/javascript" src="webjars/jquery/3.6.1/jquery.min.js"></script>
+<script type="text/javascript" src="webjars/es5-shim/4.5.9/es5-shim.min.js"></script>
+    <script type="text/javascript" src="webjars/css-vars-ponyfill/2.4.7/dist/css-vars-ponyfill.min.js"></script>
+    <script type="text/javascript" src="webjars/material-components-web/14.0.0/dist/material-components-web.min.js"></script>
+<script type="text/javascript" src="themes/theme-dsim/js/cas.js"></script>
+<script>
+    if (typeof resourceLoadedSuccessfully === "function") {
+        resourceLoadedSuccessfully();
+    }
+    $(function() {
+        typeof cssVars === "function" && cssVars({onlyLegacy: true});
+    })
+</script>
+<!-- Suppression des scripts Analytics inutiles pour UGA --><div>
+
+    <header id="app-bar" class="mdc-top-app-bar mdc-top-app-bar--fixed mdc-elevation--z4 shadow-sm">
+        <nav class="mdc-top-app-bar__row navbar navbar-dark bg-dark">
+            <div class="container-fluid container-fluid d-flex align-items-center justify-content-between">
+                <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+
+                    <button class="mdc-icon-button mdc-top-app-bar__navigation-icon  btn btn-outline-light"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#app-drawer">
+                        <span class="mdi mdi-menu fa fa-bars"></span>
+                        <span class="visually-hidden">menu</span>
+                    </button>
+
+                </section>
+                <section class="mdc-top-app-bar__section">
+                    <span class="cas-brand mx-auto">
+
+                        <span class="visually-hidden">CAS</span>
+                        <img id="cas-logo" class="cas-logo"
+                             title="CAS"
+
+                             src="themes/theme-dsim/images/cas_bandeau.svg"
+                        /></span>
+                </section>
+                <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
+
+                    <button id="cas-notifications-menu"
+                            class="mdc-icon-button mdc-top-app-bar__action-item cas-notification-toggle btn btn-outline-light"
+                            aria-label="Bookmark this page"
+                            data-bs-toggle="modal"
+                            data-bs-target="#cas-notification-dialog">
+                        <span class="mdi mdi-bell-alert fa fa-bell"></span>
+                        <span class="visually-hidden">notifications</span>
+                        <i id="notifications-count" class="notifications-count count">2</i>
+                    </button>
+
+
+
+
+                    <!--                <a id="cas-user-account"--><!--                   th:href="@{/account}"--><!--                   th:if="${ticketGrantingTicketId != null}"--><!--                   class="mdc-icon-button mdc-top-app-bar__action-item"--><!--                   aria-label="User Account">--><!--                    <span class="mdi mdi-account-group"></span>--><!--                    <span class="visually-hidden">user account</span>--><!--                </a>--></section>
+            </div>
+        </nav>
+    </header>
+    <aside id="app-drawer"
+           class="mdc-drawer mdc-drawer--dismissible mdc-drawer--modal offcanvas offcanvas-start">
+        <div class="mdc-drawer__header offcanvas-header flex-column">
+            <h3 class="mdc-drawer__title offcanvas-title">CAS</h3>
+            <h6 class="mdc-drawer__subtitle offcanvas-title">Central Authentication Service</h6>
+        </div>
+        <div class="mdc-drawer__content offcanvas-body">
+            <nav class="mdc-list list-group list-group-flush">
+                <a href="actuator" class="mdc-list-item list-group-item list-group-item-action">
+                    <i class="mdi mdi-cogs fa fa-cogs"></i>&nbsp;
+                    <span class="mdc-list-item__text">Actuator Endpoints</span>
+                </a>
+                <hr class="mdc-list-divider bs-hide"/><a class="mdc-list-item list-group-item list-group-item-action" href="https://apereo.github.io/cas">
+                    <i class="mdi mdi-file-code-outline fas fa-file-code"></i>&nbsp;
+                    <span class="mdc-list-item__text">Documentation</span>
+                </a>
+                <a class="mdc-list-item list-group-item list-group-item-action" href="https://github.com/apereo/cas/pulls">
+                    <i class="mdi mdi-call-merge fas fa-code-branch"></i>&nbsp;
+                    <span class="mdc-list-item__text">Pull Requests</span>
+                </a>
+                <a class="mdc-list-item list-group-item list-group-item-action" href="https://apereo.github.io/cas/developer/Contributor-Guidelines.html">
+                    <i class="mdi mdi-information fas fa-info-circle"></i>&nbsp;
+                    <span class="mdc-list-item__text">Guide pour les contributeurs</span>
+                </a>
+                <a class="mdc-list-item list-group-item list-group-item-action" href="https://apereo.github.io/cas/Support.html">
+                    <i class="mdi mdi-help-circle fas fa-question-circle"></i>&nbsp;
+                    <span class="mdc-list-item__text">Support</span>
+                </a>
+                <a class="mdc-list-item list-group-item list-group-item-action" href="https://apereo.github.io/cas/Mailing-Lists.html">
+                    <i class="mdi mdi-email-newsletter fas fa-envelope-open-text"></i>&nbsp;
+                    <span class="mdc-list-item__text">Listes de diffusion</span>
+                </a>
+                <a class="mdc-list-item list-group-item list-group-item-action" href="https://gitter.im/apereo/cas">
+                    <i class="mdi mdi-message-text fas fa-comment-dots"></i>&nbsp;
+                    <span class="mdc-list-item__text">Salon de discussion</span>
+                </a>
+                <a class="mdc-list-item list-group-item list-group-item-action" href="https://apereo.github.io/">
+                    <i class="mdi mdi-post fas fa-newspaper"></i>&nbsp;
+                    <span class="mdc-list-item__text">Blog</span>
+                </a>
+            </nav>
+        </div>
+    </aside>
+
+    <script>var countMessages = 0;</script>
+    <div
+            class="mdc-dialog cas-notification-dialog modal"
+            id="cas-notification-dialog" role="alertdialog"
+            aria-modal="true" aria-labelledby="notif-dialog-title"
+            aria-describedby="notif-dialog-content">
+
+        <div class="mdc-dialog__container modal-dialog">
+            <div class="mdc-dialog__surface modal-content">
+                <h1 class="mdc-dialog__title mt-lg-2 modal-header modal-title" id="notif-dialog-title">
+                    Notifications
+                </h1>
+                <div class="mdc-dialog__content modal-body" id="notif-dialog-content">
+                    </div>
+                <footer class="mdc-dialog__actions modal-footer">
+                    <button type="button" class="mdc-button mdc-dialog__button btn btn-primary"
+                            data-mdc-dialog-action="accept"
+                            data-mdc-dialog-button-default
+                            data-bs-dismiss="modal">
+                        <span class="mdc-button__label">OK</span>
+                    </button>
+                </footer>
+            </div>
+        </div>
+        <div class="mdc-dialog__scrim"></div>
+    </div>
+
+    <script type="text/javascript">
+
+        (function (material) {
+            var header = {
+                init: function () {
+                    header.attachTopbar();
+                    material.autoInit();
+                },
+                attachDrawer: function () {
+                    var elm = document.getElementById('app-drawer');
+                    if (elm != null) {
+                        var drawer = material.drawer.MDCDrawer.attachTo(elm);
+                        var closeDrawer = function (evt) {
+                            drawer.open = false;
+                        };
+                        drawer.foundation.handleScrimClick = closeDrawer;
+                        document.onkeydown = function (evt) {
+                            evt = evt || window.event;
+                            if (evt.keyCode == 27) {
+                                closeDrawer();
+                            }
+                        };
+                        header.drawer = drawer;
+                        return drawer;
+                    }
+                    return undefined;
+                },
+                attachTopbar: function (drawer) {
+
+                    var drawer = header.attachDrawer();
+                    var dialog = header.attachNotificationDialog();
+
+                    if (drawer != undefined) {
+                        header.attachDrawerToggle(drawer);
+                    }
+                    if (dialog != undefined) {
+                        header.attachNotificationToggle(dialog);
+                    }
+                },
+                checkCaps: function (ev) {
+                    var s = String.fromCharCode(ev.which);
+                    if (s.toUpperCase() === s && s.toLowerCase() !== s && !ev.shiftKey) {
+                        ev.target.parentElement.classList.add('caps-on');
+                    } else {
+                        ev.target.parentElement.classList.remove('caps-on');
+                    }
+                },
+                attachDrawerToggle: function (drawer) {
+                    let appBar = document.getElementById('app-bar');
+                    if (appBar != null) {
+                        let topAppBar = material.topAppBar.MDCTopAppBar.attachTo(appBar);
+                        topAppBar.setScrollTarget(document.getElementById('main-content'));
+                        topAppBar.listen('MDCTopAppBar:nav', function () {
+                            drawer.open = !drawer.open;
+                        });
+                        return topAppBar;
+                    }
+                    return undefined;
+                },
+                attachNotificationDialog: function () {
+                    var element = document.getElementById('cas-notification-dialog');
+                    if (element != null) {
+                        return material.dialog.MDCDialog.attachTo(element);
+                    }
+                    return undefined;
+                },
+                attachNotificationToggle: function (dialog) {
+                    var btn = document.getElementById('cas-notifications-menu');
+                    if (btn != null) {
+                        btn.addEventListener('click', function () {
+                            dialog.open();
+                        });
+                    }
+                }
+            }
+            document.addEventListener('DOMContentLoaded', function () {
+                if (material) {
+                    header.init();
+                }
+                if (countMessages == 0) {
+                    window.jQuery('#notifications-count').remove();
+                } else {
+                    window.jQuery('#notifications-count').text("(" + countMessages + ")")
+                }
+            });
+        })(typeof mdc !== 'undefined' && mdc);
+    </script>
+</div>
+
+    <div class="mdc-drawer-scrim"></div>
+
+    <div class="mdc-drawer-app-content mdc-top-app-bar--fixed-adjust d-flex justify-content-center">
+        <main role="main" id="main-content" class="container-lg py-4">
+            <div id="content">
+        <div class="w-50 m-auto mdc-card card p-4">
+            <div class="card-body"> 
+                <h2 class="banner-heading">
+                    <i class="mdi mdi-logout fas fa-sign-out-alt"></i>
+                    <span>Déconnexion réussie</span>
+                </h2>
+ 
+                <p class="banner-message">Vous vous êtes déconnecté(e) du Service Central d'Authentification (CAS).<br><br>Vous pouvez vous <a href="login.html">connecter</a> à nouveau.</p>
+                <p class="banner-message">Pour des raisons de sécurité, veuillez fermer votre navigateur.</p>
+            </div>
+        </div>
+    </div>
+        </main>
+    </div>
+
+    <footer class="py-4 d-flex justify-content-center align-items-center cas-footer">
+
+    <!--<span id="copyright" th:utext="#{copyright}" class="me-2 d-inline-block">Copyright Date Apereo, Inc</span>
+    <span class="px-3 d-inline-block">Powered by <a href="https://github.com/apereo/cas">Apereo CAS</a></span>--><span id="copyright" class="me-2 d-inline-block">Opéré par la Direction des Systèmes d'Information Mutualisés (DSIM) </span>
+    <code class="version"></code>
+
+</footer>
+
+</body>
+
+</html>
