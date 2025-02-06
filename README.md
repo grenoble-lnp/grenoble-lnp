@@ -1,5 +1,9 @@
 ## Hi there 👋
 
+Code complet de la page de login CAS-SISMU
+
+Copyright legal UGA et R.
+
 <!--
 **grenoble-lnp/grenoble-lnp** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
